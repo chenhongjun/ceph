@@ -8403,7 +8403,7 @@ int MDCache::path_traverse(MDRequestRef& mdr, MDSContextFactory& cf,
       if (pin)
 	*pin = cur;
       depth++;
-      continue;
+      continue;//正常情况从这进入下一层目录
     }
 
     ceph_assert(!dn);
